@@ -1,4 +1,5 @@
 const submitBtn = document.getElementById('submit-btn')
+const clearBtn = document.getElementById('clear-btn')
 const appointmentDiv = document.getElementById('appointment-div')
 const firstName = document.getElementById('first')
 const lastName = document.getElementById('last')
@@ -32,5 +33,7 @@ const customerQuote = (event) => {
   })
 }
 
+
+clearBtn.addEventListener('click', )
 
 submitBtn.addEventListener('click', customerQuote)
