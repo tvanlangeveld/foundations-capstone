@@ -1,4 +1,5 @@
 const submitBtn = document.getElementById('submit-btn')
+const appointmentDiv = document.getElementById('appointment-div')
 const firstName = document.getElementById('first')
 const lastName = document.getElementById('last')
 const address = document.getElementById('address')
@@ -23,8 +24,12 @@ const customerQuote = (event) => {
   axios.post(baseURL, customerInfo)
   .then(res => {
     console.log(res.data)
-  })
 
+    let userTag = document.createElement('h3')
+    userTag.textContent = `Thank you ${res.data.firstName} ${res.data.lastName}, someone will be reaching out soon!`
+    document.body.appendChild(userTag)
+    
+  })
 }
 
 
