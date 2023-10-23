@@ -21,6 +21,7 @@ header{
   padding-left: 25px;
   padding-right: 25px;
   border: 5px solid black;
+
 }
 
 #input-form{
@@ -82,4 +83,18 @@ justify-content: center;
   h3{
     display: flex;
     justify-content: center;
+  }
+
+  .lead-list{
+    border: solid black 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline-flexbox;
+  }
+
+  .delete-button{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    background-color: lightcoral;
   }

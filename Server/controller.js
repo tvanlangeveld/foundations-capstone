@@ -11,5 +11,8 @@ module.exports={
   },
   findDiscount: (req, res) => {
     res.status(200).send(discountCodes)
+  },
+  getLeads: (req, res) => {
+    res.status(200).send(userDatabase)
   }
 }
