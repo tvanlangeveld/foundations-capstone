@@ -9,11 +9,12 @@
   <header>
     <h1>Request Quote!</h1>
   </header>
-  <nav>
-    <h3>Home</h3>
-    <h3>User</h3>
-  </nav>
+
   <body>
+    <nav>
+      <p><a href="./main.html">HOME</a></p>
+      <p><a href="./leads.html">LEADS</a></p>
+    </nav>
     <div id="form-div">
       <form action="submit" id="input-form">
         <label>First Name:</label>
@@ -26,11 +27,14 @@
         <input type="text" placeholder="Text" id="email" />
         <label>Service:</label>
         <input type="text" placeholder="Text" id="service" />
+        <label>Promo Code:</label>
+        <input type="text" placeholder="Text" id="promo" />
         <button id="submit-btn">Submit</button>
-        <button id="clear-btn">Clear</button>
       </form>
     </div>
-    <div id="appointment-div"></div>
+    <div id="promo-div">
+      <button id="promo-btn">Get Promo Code</button>
+    </div>
     <script src="./main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
   </body>

@@ -1,0 +1,85 @@
+body{
+  background-color: lightgray;
+}
+
+
+header{
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid black;
+
+}
+
+
+#form-div{
+  display: flexbox;
+  justify-content: center;
+  position: sticky; top: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 5px solid black;
+}
+
+#input-form{
+  display: flex;
+  flex-direction: column;
+}
+
+form > *{
+  padding: 3px;
+}
+
+#submit-btn{
+display: flexbox;
+justify-content: center;
+text-align: center;
+margin-top: 5px;
+}
+
+#promo-div{
+margin-top: 25px;
+display: flex;
+justify-content: center;
+
+}
+
+#promo-btn{
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  color:black;
+  font-weight:bold;
+  animation: myanimation 10s infinite;
+  }
+  
+  @keyframes myanimation {
+    0% {background-color: red;}
+    25%{background-color:yellow;}
+    50%{background-color:green;}
+    75%{background-color:brown;}
+    100% {background-color: red;}
+  }
+  
+  nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h3{
+    display: flex;
+    justify-content: center;
+  }
