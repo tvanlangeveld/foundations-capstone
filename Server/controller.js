@@ -1,6 +1,6 @@
 let userDatabase = []
 let discountCodes = ['10% off!!', 'Sorry no discounts at this time.', '15% off!!', '25% off!',  'Buy one get one free']
-
+let users = []
 
 module.exports={
   customerQuote: (req, res) => {
@@ -27,5 +27,11 @@ module.exports={
       }
     }
     res.sendStatus(400)
+  },
+  createUser: (req, res) => {
+    users.push(req.body)
+    res.status(200).send(`${req.body.username} has been sucessfully created!`)
+    console.log(users)
   }
+
 }
