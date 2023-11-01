@@ -15,6 +15,9 @@
       <p><a href="./main.html">HOME</a></p>
       <p><a href="./leads.html">LEADS</a></p>
     </nav>
+    <div id="promo-div">
+      <button id="promo-btn">Get Promo Code</button>
+    </div>
     <div id="form-div">
       <form action="submit" id="input-form">
         <label>First Name:</label>
@@ -23,18 +26,22 @@
         <input type="text" placeholder="Text" id="last" />
         <label>Address:</label>
         <input type="text" placeholder="Text" id="address" />
-        <label>Email:</label>
-        <input type="text" placeholder="Text" id="email" />
+        <label>Phone:</label>
+        <input type="text" placeholder="Phone" id="email" />
         <label>Service:</label>
-        <input type="text" placeholder="Text" id="service" />
+        <select type="text" id="service">
+          <option value="Select Service">Select Service</option>
+          <option value="Fence">Fence</option>
+          <option value="Alarm">Alarm</option>
+          <option value="Pest Control">Pest Control</option>
+          <option value="Solar">Solar</option>
+        </select>
         <label>Promo Code:</label>
         <input type="text" placeholder="Text" id="promo" />
         <button id="submit-btn">Submit</button>
       </form>
     </div>
-    <div id="promo-div">
-      <button id="promo-btn">Get Promo Code</button>
-    </div>
+
     <script src="./main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
   </body>
